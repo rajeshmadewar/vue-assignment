@@ -148,7 +148,7 @@ ul {
   font-size: 28px; /* Increased text to enable scrolling */
   top:0px;
   float:right;
-  magin-top: -170px
+  margin-top: -170px
 }
 
 
@@ -162,6 +162,7 @@ margin: auto;
     width: 20%;
     height: 400px;
     left:0px;
+    overflow-y: auto;
     border: 1px solid grey;
 }
 
