@@ -66,7 +66,7 @@ export default {
       this.body = note.body
     },
     reset () {
-      this.show = !this.show
+      this.show = true
       this.editFlag = false
       this.title = '',
       this.body = ''
@@ -74,11 +74,13 @@ export default {
     editNote () {
       this.notes[this.currentIndex].title = this.title
       this.notes[this.currentIndex].body = this.body
+      this.show = false
       this.title = ''
       this.body = ''
     },    
     deleteNote (index) {
       this.notes.splice(index, 1)
+      this.show = false
       this.title = ''
       this.body = ''
     }
